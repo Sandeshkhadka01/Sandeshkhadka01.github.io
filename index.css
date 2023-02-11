@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  display:inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+header nav a {
+  display:block;
+  padding:0 10px;
+  color:#fff;
+  font-size:20px;
+  line-height:60px;
+  text-decoration:none;
+}
+header nav a:hover{
+  color: rgb(251, 98, 103);
+  transition: 0.5s;
+}
+main {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 140px);
+}
+
+section {
+  background-color: #fff;
+  background-image: url(about.jpeg);
+  background-position: center;
+  background-size: cover;
+  padding: 200px;
+  box-shadow: 10px 10px 10px #ccc;
+  display:list-item;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+section h2 {
+  font-size: 24px;
+  color: rgb(20, 20, 20);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+  max-width: 500px;
+}
+
+
+.image-container {
+  position: absolute;
+  top: 45px;
+  left: calc(50% - 85px);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgb(46, 45, 45);
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+  header nav ul li {
+    padding: 10px;
+  }
+  section h2 {
+    font-size: 18px;
+  }
+  section p {
+    font-size: 16px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+  
+  header nav ul {
+    justify-content: center;
+  }
+}

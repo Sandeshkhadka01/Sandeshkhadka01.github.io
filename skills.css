@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  display:inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+header nav a {
+  display:block;
+  padding:0 10px;
+  color:#fff;
+  font-size:20px;
+  line-height:60px;
+  text-decoration:none;
+}
+header nav a:hover{
+  color: rgb(251, 98, 103);
+  transition: 0.5s;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 140px);
+}
+
+section {
+  background-color: #fff;
+  background-image: url(about.jpeg);
+  background-position: center;
+  background-size: cover;
+  padding: 40px;
+  box-shadow: 1px 1px 1px #ccc;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+}
+
+.skill-box {
+  width: 500px; 
+  height: 100px;
+  margin: 20px;
+  background-color: #ccc;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 5px #333;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.skill-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 1px 10px 20px #333;
+}
+
+.skill-box h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
+
+.skill-box i {
+  font-size: 70px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.skill-box p {
+  visibility: hidden;
+}
+
+.skill-box:hover p {
+  visibility: visible;
+  transition: 1s;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
